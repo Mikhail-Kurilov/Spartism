@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  width: 100%;
+  height: 59px;
+  background-color: #bd2e00;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerWrapper {
+  margin-left: 119px;
+  font-size: 20px;
+}
+.vk {
+  font-weight: bolder;
+  cursor: default;
+}
+
+.vkLink {
+  text-decoration: none;
+  color: black;
+}
+
+.vkLink:hover {
+  color: #2e0000;
+}

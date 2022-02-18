@@ -1,0 +1,306 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+}
+
+.navWrapper {
+  width: 230px;
+  position: fixed;
+  background: #bd2e00;
+  border: 3px solid #111;
+  border-radius: 4px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+}
+
+.modal-transition-appear {
+  transition: height 0.5s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.modal-transition-appear-active {
+  transform: translateY(0);
+}
+
+.navWrapper.opened {
+  transition: height 0.5s ease-in-out;
+}
+
+.navListContainer {
+  max-width: 230px;
+  padding: 10px 0px 20px 0px;
+}
+
+.navBarList {
+  text-align: center;
+  position: relative;
+  height: 26px;
+  line-height: 26px;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.navBarList:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  bottom: 50%;
+  left: -100%;
+  transition-delay: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navBarList:hover:after,
+.navBarList.hover:after {
+  left: 100%;
+}
+
+.listLink {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0px -40px 0px rgba(0, 0, 0, 1);
+  transition: all 0.75s;
+  transform: translateY(100%) translateZ(0);
+  transition-delay: all 0.25s;
+}
+
+.listLink:hover,
+.listLink.hover {
+  text-shadow: 0px -40px 0px rgba(0, 0, 0, 0);
+  transform: translateY(0%) translateZ(0) scale(1.1);
+  font-weight: 600;
+}
+
+.textPage {
+  height: 512px;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+}
+
+.buttonBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.sideBarOpenWrapper {
+  display: flex;
+}
+
+.sideBarOpen {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(201, 201, 201);
+}
+
+.navLogo {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.navLogo:hover {
+  transform: rotateY(0deg) rotate(-90deg);
+  opacity: 0.7;
+}
+
+.backButtonWrapper {
+  display: flex;
+  padding: 8px;
+}
+
+.backButton {
+  background: rgb(201, 201, 201);
+  width: 39px;
+  height: 39px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.backButton:hover {
+  transform: rotateY(0deg) rotate(-90deg);
+  opacity: 0.7;
+}
+
+.textWrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+#start {
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: start;
+}
+
+h3 {
+  text-align: start;
+  margin-top: 30px;
+}
+
+section {
+  text-align: justify;
+
+  margin: 20px auto 0;
+}
+
+p {
+  text-indent: 2em;
+}
+
+.poetry {
+  text-align: center;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.textUl {
+  text-indent: 2em;
+}
+
+.textLi {
+  list-style-type: none;
+  text-indent: 3em;
+}
+
+.textLi:before {
+  content: "- ";
+}
+
+@media (min-width: 576px) {
+  .textWrapper {
+    padding: 0 8%;
+  }
+
+  .buttonBox {
+    padding-right: 2px;
+  }
+
+  .navLogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .arrowLogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sideBarOpen {
+    width: 40px;
+    height: 40px;
+  }
+
+  .backButton {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+@media (min-width: 768px) {
+  .textWrapper {
+    padding: 0 6.5%;
+  }
+
+  .navLogo {
+    width: 27px;
+    height: 27px;
+  }
+
+  .arrowLogo {
+    width: 27px;
+    height: 27px;
+  }
+
+  .sideBarOpen {
+    width: 42px;
+    height: 42px;
+  }
+
+  .backButton {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media (min-width: 992px) {
+  .textWrapper {
+    padding: 0 7%;
+  }
+
+  .buttonBox {
+    padding-right: 10px;
+  }
+
+  .navLogo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrowLogo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sideBarOpen {
+    width: 45px;
+    height: 45px;
+  }
+
+  .backButton {
+    width: 34px;
+    height: 34px;
+  }
+}
+@media (min-width: 1200px) {
+  .textWrapper {
+    padding: 0 5.5%;
+  }
+
+  .buttonBox {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .textWrapper {
+    padding: 0 10%;
+  }
+
+  .buttonBox {
+    padding-right: 2px;
+  }
+
+  .navLogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .arrowLogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .sideBarOpen {
+    width: 40px;
+    height: 40px;
+  }
+
+  .backButton {
+    width: 29px;
+    height: 29px;
+  }
+}

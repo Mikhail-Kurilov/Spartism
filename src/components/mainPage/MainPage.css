@@ -1,0 +1,213 @@
+.mainPage {
+  background-color: #bd2e00;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 19px;
+  width: 760px;
+  margin-left: 219px;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
+
+.description {
+  width: 100px;
+  font-size: 13px;
+  margin-top: 15px;
+  cursor: default;
+  color: rgb(166, 166, 166);
+}
+
+.statementsLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainList {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: calc(1em / 5);
+  text-shadow: 1px 1px rgb(166, 125, 125), -1px -1px 0 rgb(166, 125, 125),
+    1px -1px 0 rgb(166, 125, 125), -1px 1px 0 rgb(166, 125, 125);
+  cursor: default;
+}
+
+.listItem {
+  list-style: none;
+  background: url(../../assets/img/ring.png) no-repeat 0 23px;
+  padding-left: 20px;
+}
+
+.reading {
+  letter-spacing: calc(1em / 10);
+  background-color: #571e0b;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 3px solid #000000;
+  border-radius: 0.5em;
+  color: #000000;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0.8em 2.4em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 30px 7px 7px 7px;
+  border-color: #000000;
+  box-shadow: 0 0 40px 40px #611903 inset, 0 0 0 0 #db5534;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.reading:hover,
+.reading:focus {
+  outline: 0;
+  box-shadow: 0 0 10px 0 #db5534 inset, 0 0 10px 4px #db5534;
+}
+
+.download {
+  margin-top: 10px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #db5534;
+  cursor: default;
+}
+
+.logo {
+  margin-left: 10px;
+  padding: 0;
+  transition: 0.6s ease-in-out;
+}
+
+.logo:hover {
+  transform: scaleY(-1);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-size: 40px;
+  border-radius: 5px;
+}
+
+.link:hover {
+  color: #2e0000;
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 2560px;
+  height: 510px;
+}
+
+.backgroundVideo {
+  object-fit: cover;
+  width: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .contentBox {
+    margin-left: 20px;
+    width: 550px;
+  }
+  .mainList {
+    font-size: 32px;
+  }
+
+  .videoWrapper {
+    height: 480px;
+  }
+  .listItem {
+    background: url(../../assets/img/ring.png) no-repeat 0 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contentBox {
+    margin-left: 40px;
+    width: 680px;
+  }
+
+  .statementsLinks {
+    margin-left: 20px;
+  }
+  .mainList {
+    font-size: 38px;
+  }
+
+  .videoWrapper {
+    height: 515px;
+  }
+  .listItem {
+    background: url(../../assets/img/ring.png) no-repeat 0 23px;
+  }
+}
+@media (min-width: 992px) {
+  .contentBox {
+    margin-left: 100px;
+    width: 690px;
+  }
+
+  .statementsLinks {
+    margin-left: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .contentBox {
+    margin-left: 60px;
+    width: 790px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contentBox {
+    margin-left: 10px;
+    width: 420px;
+  }
+
+  .statementsLinks {
+    margin-left: 10px;
+  }
+
+  .listItem {
+    background: url(../../assets/img/ring.png) no-repeat 0 10px;
+  }
+  .mainList {
+    font-size: 22px;
+  }
+
+  .videoWrapper {
+    height: 430px;
+  }
+
+  .reading {
+    padding: 0.4em 1.5em;
+  }
+}

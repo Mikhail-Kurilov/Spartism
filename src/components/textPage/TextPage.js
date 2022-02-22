@@ -23,7 +23,9 @@ function TextPage() {
 
   return (
     <div className="content">
-      <div className="outer">{<SideBar openSideBar={openSideBar} />}</div>
+      <div className="outer">
+        {<SideBar openSideBar={openSideBar} sideBarToggle={sideBarToggle} />}
+      </div>
       <div className="textPage">
         <div className="buttonBox">
           <div className="sideBarOpenWrapper">

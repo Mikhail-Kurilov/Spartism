@@ -44,41 +44,43 @@ function MainPage() {
               читать онлайн
             </button>
           </form>
-          <span className="download">
-            скачать:{" "}
-            <Link
-              to="/files/spartism.fb2"
-              target="_blank"
-              download
-              className="link"
-              onClick={downloadSoundHandler}
-            >
-              <img
-                src={lambda}
-                alt="logo"
-                className="logo"
-                width="32px"
-                height="32px"
-              ></img>
-              fb2
-            </Link>
-            <Link
-              to="/files/spartism.pdf"
-              target="_blank"
-              download
-              className="link"
-              onClick={downloadSoundHandler}
-            >
-              <img
-                src={lambda}
-                alt="logo"
-                className="logo"
-                width="32px"
-                height="32px"
-              ></img>
-              pdf
-            </Link>
-          </span>
+          <div className="downloadContainer">
+            <span className="download">скачать: </span>
+            <div className="linkContainer">
+              <Link
+                to="/files/spartism.fb2"
+                target="_blank"
+                download
+                className="link"
+                onClick={downloadSoundHandler}
+              >
+                <img
+                  src={lambda}
+                  alt="logo"
+                  className="logo"
+                  width="32px"
+                  height="32px"
+                ></img>
+                fb2
+              </Link>
+              <Link
+                to="/files/spartism.pdf"
+                target="_blank"
+                download
+                className="link"
+                onClick={downloadSoundHandler}
+              >
+                <img
+                  src={lambda}
+                  alt="logo"
+                  className="logo"
+                  width="32px"
+                  height="32px"
+                ></img>
+                pdf
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="videoWrapper">

@@ -27,16 +27,18 @@
   justify-content: space-between;
 }
 
-.mainList {
+.listItem {
   font-size: 36px;
   font-weight: bold;
   letter-spacing: calc(1em / 5);
   text-shadow: 1px 1px rgb(166, 125, 125), -1px -1px 0 rgb(166, 125, 125),
     1px -1px 0 rgb(166, 125, 125), -1px 1px 0 rgb(166, 125, 125);
-  cursor: default;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
-.listItem {
+.listItemWrapper {
   list-style: none;
   background: url(../../assets/img/ring.png) no-repeat 0 23px;
   padding-left: 20px;
@@ -87,8 +89,15 @@
   font-size: 36px;
   margin-bottom: 10px;
   font-weight: bold;
-  text-shadow: 2px 2px 1px #dc8975;
+  text-shadow: 2px 1px 1px #dc8975;
   cursor: default;
+}
+
+.downloadContainer {
+  display: flex; 
+  flex-direction: row;
+  margin-bottom: 25px;
+  align-items: center;
 }
 
 .logo {
@@ -111,7 +120,7 @@
   font-size: 36px;
   margin-bottom: 30px;
   font-weight: bold;
-  text-shadow: 1px 2px 1px #dc8975;
+  text-shadow: 2px 1px 1px #dc8975;
   cursor: default;
 }
 
@@ -151,8 +160,17 @@
   .videoWrapper {
     height: 480px;
   }
+
   .listItem {
+    font-size: 32px;
+  }
+  
+  .listItemWrapper {
     background: url(../../assets/img/ring.png) no-repeat 0 18px;
+  }
+
+  .downloadContainer {
+    margin-bottom: 40px;
   }
 }
 
@@ -165,16 +183,28 @@
   .statementsLinks {
     margin-left: 20px;
   }
+
   .mainList {
     font-size: 38px;
   }
 
-  .videoWrapper {
-    height: 515px;
-  }
   .listItem {
-    background: url(../../assets/img/ring.png) no-repeat 0 23px;
+    font-size: 38px;
+    margin-bottom: 5px;
   }
+  
+  .listItemWrapper {
+    background: url(../../assets/img/ring.png) no-repeat 0 22px;
+  }
+
+  .videoWrapper {
+    height: 555px;
+  }
+
+  .downloadContainer {
+    margin-bottom: 40px;
+  }
+ 
 }
 @media (min-width: 992px) {
   .contentBox {
@@ -186,10 +216,43 @@
     margin-left: 45px;
   }
 }
+
 @media (min-width: 1200px) {
   .contentBox {
     margin-left: 60px;
     width: 790px;
+  }
+
+  .mainList {
+    font-size: 40px;
+  }
+
+  .listItem {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .listItemWrapper {
+    background: url(../../assets/img/ring.png) no-repeat 0 40px;
+  }
+
+  .videoWrapper {
+    height: 870px;
+  }
+
+  .downloadContainer {
+    margin-bottom: 228px;
+  }
+
+  .download {
+    color: #611903;
+    text-shadow: 2px 1px 1px #d9a79a;
+  }
+
+  .link {
+
+    text-shadow: 2px 1px 1px #d9a79a;
   }
 }
 
@@ -200,12 +263,16 @@
   }
 
   .statementsLinks {
-    margin-left: 10px;
-    
-    
+    margin-left: 10px; 
   }
 
   .listItem {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .listItemWrapper {
     background: url(../../assets/img/ring.png) no-repeat 0 10px;
   }
   .mainList {
@@ -213,7 +280,7 @@
   }
 
   .videoWrapper {
-    height: 430px;
+    height: 510px;
   }
 
   .reading {
@@ -222,8 +289,9 @@
   }
 
   .downloadContainer {
+    align-items: flex-start;
     display: flex; 
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 }

@@ -3,8 +3,13 @@
   min-height: 100vh;
   flex-direction: column;
   overflow-y: hidden;
+  
 }
 
 .router {
   flex: 1;
+}
+
+.routerFooterWrapper {
+  
 }

@@ -17,6 +17,36 @@ function MainPage() {
     navigate("/text");
   }
 
+  function handleClickNav() {
+    audioElem.play();
+    navigate("/main/cognitivism");
+  }
+
+  function handleClickAsc() {
+    audioElem.play();
+    navigate("/main/ascetism");
+  }
+
+  function handleClickPro() {
+    audioElem.play();
+    navigate("/main/progressivism");
+  }
+
+  function handleClickLib() {
+    audioElem.play();
+    navigate("/main/liberalism");
+  }
+
+  function handleClickSec() {
+    audioElem.play();
+    navigate("/main/secularization");
+  }
+
+  function handleClickMon() {
+    audioElem.play();
+    navigate("/main/monoculturalism");
+  }
+
   function downloadSoundHandler() {
     downloadButton.play();
   }
@@ -32,12 +62,36 @@ function MainPage() {
         </span>
         <div className="statementsLinks">
           <ul className="mainList">
-            <li className="listItem">когнитивизм</li>
-            <li className="listItem">аскетизм</li>
-            <li className="listItem">прогрессивизм</li>
-            <li className="listItem">либерализм</li>
-            <li className="listItem">секуляризация</li>
-            <li className="listItem">монокультурализм</li>
+            <li className="listItemWrapper">
+              <button className="listItem" onClick={handleClickNav}>
+                когнитивизм
+              </button>
+            </li>
+            <li className="listItemWrapper">
+              <button className="listItem" onClick={handleClickAsc}>
+                аскетизм
+              </button>
+            </li>
+            <li className="listItemWrapper">
+              <button className="listItem" onClick={handleClickPro}>
+                прогрессивизм
+              </button>
+            </li>
+            <li className="listItemWrapper">
+              <button className="listItem" onClick={handleClickLib}>
+                либерализм
+              </button>
+            </li>
+            <li className="listItemWrapper">
+              <button className="listItem" onClick={handleClickSec}>
+                секуляризация
+              </button>
+            </li>
+            <li className="listItemWrapper">
+              <button className="listItem" onClick={handleClickMon}>
+                монокультурализм
+              </button>
+            </li>
           </ul>
           <form>
             <button className="reading" onClick={handleClick}>
